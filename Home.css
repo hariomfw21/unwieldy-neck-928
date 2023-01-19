@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Lato", sans-serif;
+}
+
+#nev-bar{
+    /* border: 1px solid red; */
+    background-color: red;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    height: 5rem
+}
+
+#nev-1{
+    /* border: 1px solid black; */
+}
+#nev-2{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.logo{
+    /* border: 1px solid black; */
+}
+
+.searchBox{
+    /* border: 1px solid blue; */
+}
+#search-box{
+    border: none;
+    height: 30px;
+    width: 75%;
+    font-weight: bold;
+    font-size: medium;
+    padding-left: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+#search-icon{
+    border: none;
+    height: 32px;
+    width: 20%;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.aboutNev1{
+    /* border: 1xp solid red; */
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 0.9rem;
+    font-size: smaller;
+}
+.aboutNev2{
+    /* border: 1xp solid red; */
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 0.9rem;
+}
+.aboutNev1>a{
+    text-decoration: none;
+    padding-left: 5px;
+    color: aliceblue;
+}
+
+.aboutNev2>a{
+    text-decoration: none;
+    padding-left: 5px;
+    color: aliceblue;
+}
+
+/* -------drop Down nav----------------> */
+ 
+#dropdown-nav{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    background-color: #003380;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+#dropdown-nav>button{
+    font-size: smaller;
+    background-color: #003380;
+    border: none;
+    color: aliceblue;
+}
+
+#dropdown {
+    height: 15rem;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top: 10;
+    left: 0;
+    background-color: #252f64;
+    overflow-x: hidden;
+    /* transition: 0.5s; */
+    padding-top: 20px;
+    margin-left:20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+#dropdown-row1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 10px;
+}
+
+#dropdown-row2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 10px;
+}
+
+.li-color{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.carousel-cell {
+    width: 100%; /* full width */ /* height of carousel */
+    margin-right: 10px;
+}
+
+.main-carousel{
+    margin-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+/* after slider */
+.Home-appliences{
+    display: flex;
+}
+.Home-appliences>h2{
+    padding: 15px;
+}
+
+/* .Home-appliences>button{
+   border: none;
+   background-color: #003380;
+   color: aliceblue;
+   padding:1rem;
+   margin-top: -1rem;
+} */
+
+
+#homeappliences{
+    /* border: 1px solid red; */
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1.5rem;
+}
+#homeappliences>div{
+    /* border: 1px solid black; */
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#homeappliences>div>div{
+    /* border: 1px solid blue;    */
+}
+
+#homeappliences>div>div>div{
+    padding: 15px;
+    height: 60%;
+}
+
+/* ---------HP special---- */
+.HP-Special{
+    padding: 15px; 
+}
+
+#HpSpecial{
+     /* border: 1px solid red; */
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(5,1fr);
+     gap: 1.5rem;
+}
+
+#HpSpecial>div{
+    /* border: 1px solid black; */
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#HpSpecial>div>div{
+     /* border: 1px solid blue;    */
+}
+
+#HpSpecial>div>div>div{
+    padding: 15px;
+    height: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

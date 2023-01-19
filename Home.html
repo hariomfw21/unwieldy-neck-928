@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Home.css" />
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</style>
+
+<body>
+    <div id="nev-bar">
+        <div id="nev-1">
+            <div></div>
+            <div></div>
+            <div class="aboutNev1">
+                <a href="">Find a store |</a>
+                <a href="">Buying guides |</a>
+                <a href=""> Contact us</a>
+            </div>
+        </div>
+        <div id="nev-2">
+            <div class="logo">
+                <h1 style="color: white; text-align: center">My dIGITAL</h1>
+            </div>
+            <div class="searchBox">
+                <form>
+                    <input type="text" id="search-box" placeholder="Find your favorite products" name="search" />
+                    <button type="submit" id="search-icon" class="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+            <div class="aboutNev2">
+                <a href="">Select your Pin Code |</a>
+                <a href="">Cart |</a>
+                <a href=""> Login</a>
+            </div>
+        </div>
+    </div>
+    <div id="dropdown-nav">
+        <button onmouseover="openDropdownM()">MOBILES & TABLETS ▽</button>
+        <button onmouseover="openDropdownT()">TELIVISION ▽</button>
+        <button onmouseover="openDropdownA()">AUDIO ▽</button>
+        <button onmouseover="openDropdownH()">HOME APPLIENCES ▽</button>
+        <button onmouseover="openDropdownC()">COMPUTER ▽</button>
+        <button onmouseover="openDropdownCa()">CAMERA ▽</button>
+        <button onmouseover="openDropdownK()">KITCHEN APPLIENCES ▽</button>
+        <button onmouseover="openDropdownP()">PRESONAL CARE ▽</button>
+        <button onmouseover="openDropdownA()">ACCESSORIES ▽</button>
+    </div>
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <div id="dropdown" onmouseleave="closeNev()">
+        <!-- <div id="dropdown-row1">
+            <div>
+                <ul>
+                    <li><a href="" style="color: rgb(248, 242, 242);"><b>Headphones & Headsets</b></a>
+                    </li>
+                    <li><a href="" class="li-color">True Wireless</a></li>
+                    <li><a href="" class="li-color">Bluetooth </a></li>
+                    <li><a href="" class="li-color">Wired Earphones</a></li>
+                    <li><a href="" class="li-color">On Ear Headphones</a></li>
+                    <li><a href="" class="li-color">Noise Cancelling Headphones</a></li>
+
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="" class="li-color" style="color: rgb(248, 242, 242);"><b>Bluetooth & Wifi
+                                Speakers</b></a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+        <div id="dropdown-row2">
+            <div>
+                <ul>
+                    <li><a href="" class="li-color" style="color: rgb(248, 242, 242)"><b>TV Speakers & Soundbars</b></a>
+                    </li>
+                    <br>
+                    <li><a href="" class="li-color">Soundbars</a></li>
+                    <li><a href="" class="li-color">Home Theater</a></li>
+                    <li><a href="" class="li-color">Party Speakers</a></li>
+                    <li><a href="" class="li-color">Multimedia</a></li>
+    
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="" class="li-color" style="color: rgb(248, 242, 242)"><b>TV Speakers & Soundbars</b></a>
+                    </li>
+                    <br>
+                    <li><a href="" class="li-color">Soundbars</a></li>
+                    <li><a href="" class="li-color">Home Theater</a></li>
+                    <li><a href="" class="li-color">Party Speakers</a></li>
+                    <li><a href="" class="li-color">Multimedia</a></li>
+    
+                </ul>
+            </div>
+            
+        </div> -->
+    </div>
+    <!-- slider 1 -->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true,"autoPlay": true }'>
+        <div class="carousel-cell">
+            <img width="100%"
+                src="https://www.reliancedigital.in/medias/intranet-Carousal-Banner-Desktop.jpg?context=bWFzdGVyfGltYWdlc3wxMDI1MTN8aW1hZ2UvanBlZ3xpbWFnZXMvaDkzL2hlMC85OTQxNTE2MTU2OTU4LmpwZ3wxMDJmNjQ2YzdjYTIyMzk2NTM5NTMyYjZhNTgyN2M2MjlhMTM3Y2FmNWNhZjAwNzUxY2ExMjg0ZmNhNGMxZjRl"
+                alt="">
+        </div>
+        <div class="carousel-cell">
+            <img width="100%"
+                src="https://www.reliancedigital.in/medias/Teaser-Banner-18-01-2023-01.jpg?context=bWFzdGVyfGltYWdlc3wxNjAxMzh8aW1hZ2UvanBlZ3xpbWFnZXMvaGNmL2gzMS85OTQ5MzMxMjU5NDIyLmpwZ3wzYzRmZmY5OTBkNzc1NzAxN2FhMDQ4NDYzM2U2MGU3MmNlNDFiNTg3YThiMDNhMjkwNWQwMDA1NWI4YzkyODE2"
+                alt="">
+        </div>
+    </div>
+    <!-- slide 2nd -->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true,"autoPlay": false }'>
+        <div class="carousel-cell">
+            <img width="100%" src="https://www.reliancedigital.in/medias/Samsung-Thursdays-Carousel-Banner-02-11-2022.jpg?context=bWFzdGVyfGltYWdlc3w3NjY0OHxpbWFnZS9qcGVnfGltYWdlcy9oNmQvaDg0Lzk5MTg5MjQwOTU1MTguanBnfDQ3MWE0ZWNlMWVmMGY0Nzc0NWJiZGIxM2FlZWEyMzkzZmE1ZGVjNjAyZWVhNTY4NDY0ZTM4NmJmOGYxOWYzYTI" alt="">
+        </div>
+        <div class="carousel-cell">
+            <img width="100%" src="https://www.reliancedigital.in/medias/Smartwatches-Carnival-Carousel-Banner-11-01-2023.jpg?context=bWFzdGVyfGltYWdlc3wxMjE3NjJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDZlL2hjNy85OTQ1ODI3NzcwMzk4LmpwZ3xmM2IxYjAyZjAzMmZmODYzNjk4OTU5MzdlMzhjNTY1YzU1ZDk3N2Y2MzFiOGE1N2M2YjUxOTEyODE4YzRiNTFk" alt="">
+        </div>
+        <div class="carousel-cell">
+            <img width="100%" src="https://www.reliancedigital.in/medias/iPhone-13-CLP-Banner-59900-18-01-2023.jpg?context=bWFzdGVyfGltYWdlc3w2NDc0OHxpbWFnZS9qcGVnfGltYWdlcy9oZTkvaDA0Lzk5NDkyMzI5ODgxOTAuanBnfGUzZTI4NzExNDI5MzMwOTMzYzc2NGU4OTM4M2FiNzY5YjcxZWIzMzk0ZjA1ZThlMWMyMThjNDg4NWNmYTZjMzM" alt="">
+        </div>
+        <div class="carousel-cell">
+            <img width="100%" src="https://www.reliancedigital.in/medias/Samsung-Galaxy-S23-CLP-Banner-18-01-2023.jpg?context=bWFzdGVyfGltYWdlc3w1NTg0NXxpbWFnZS9qcGVnfGltYWdlcy9oYTEvaGNiLzk5NDk5NjIzNzExMDIuanBnfDFmOGM1Y2M1ZDQ1MGM4NWE2ZTAyNjgyZGU5YjY0MWYwY2JiN2E2Nzg4OTJkODY2OTNlOGRmNjk1NzE2MGU0N2Y" alt="">
+        </div>
+        
+    </div>
+    <!-- Home appliences fest -->
+     <!-- Home appliences fest -->
+      <!-- Home appliences fest -->
+    <div class="Home-appliences">
+        <h2>Home appliences</h2>
+        <!-- <button>View All</button> -->
+    </div>
+    <div id="homeappliences">
+        <div>
+            <div>
+               <div>
+                <img width="100%" src="https://www.reliancedigital.in/medias/Karbonn-KJC70S-2024L-Washing-Machine-493627329-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2NTM1NXxpbWFnZS9qcGVnfGltYWdlcy9oYjIvaGI5Lzk5MjgzMjI3NzcxMTguanBnfDRkNTI5YTlmMzUxYmFhMTk1NDQyNDE1OWU1MDI4NTY4ZGM0OTM0Yzc4YWE5ODI2MmNhNjE0NzljYTZiMDQ2ZDA" alt="">
+               </div>
+               <div>
+                <h5>Karbonn 7 Kg Semi Automatic Top Load Washing Machine, White/Red, KJC70S-2024L</h5>
+                <p style="padding-top: 2px; color: gray;">Price: 4500</p>
+                <p style="padding-top: 2px; color: gray;">Offer Price : 2800</p>
+               </div>
+            </div>
+            
+        </div>
+        <div>
+            <div>
+                <div>
+                    <img width="100%" src="https://www.reliancedigital.in/medias/LG-WW184EPB-Water-Purifiers-492284046-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzOTMxNnxpbWFnZS9qcGVnfGltYWdlcy9oYTUvaDY4Lzk1OTM5OTc3ODcxNjYuanBnfDViMzQ2NGNlMzc1NDM5MzRlOWNmYzFiNTMzZWFmZDBlYzc4NDNhNmNkYTNhZWE0MWE1Y2QyYjM1NzkzNDEzYmY" alt="">
+                </div>
+                <div>
+                    <h5>Karbonn 7 Kg Semi Automatic Top Load Washing Machine, White/Red, KJC70S-2024L</h5>
+                    <p style="padding-top: 2px; color: gray;">Price: 4500</p>
+                    <p style="padding-top: 2px; color: gray;">Offer Price : 2800</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <img width="100%" src="https://www.reliancedigital.in/medias/KELVINATOR-170L-KRD-C190MRP-Refrigerator-492911043-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzODA1OXxpbWFnZS9wbmd8aW1hZ2VzL2gwZS9oOTgvOTg3NzgzOTMxNDk3NC5wbmd8MTBiZjcwYmY2MjliOWY1MjMzYWY4NDlmMjU4Yzk3YWMxMDIwMDU1OTBlMGYxYWFkNTY0YmFhMWNiYTE1MWFkMA" alt="">
+                </div>
+                <div>
+                    <h5>Karbonn 7 Kg Semi Automatic Top Load Washing Machine, White/Red, KJC70S-2024L</h5>
+                    <p style="padding-top: 2px; color: gray;">Price: 4500</p>
+                    <p style="padding-top: 2px; color: gray;">Offer Price : 2800</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <img width="100%" src="https://www.reliancedigital.in/medias/SAMSUNG-AR18BY4YATA-Split-Air-conditioner-581026750-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxODUyNXxpbWFnZS9qcGVnfGltYWdlcy9oNmMvaGZhLzk3ODUxMTA1OTM1NjYuanBnfGRkMWVhMzNmYmNmNTk0NzJjZTQ0NTdhZWJkMjU2YThiYWFhYjY1YzMzYWZiNjkxZDM5N2Y3ODA2MmU5M2YxMDI" alt="">
+                </div>
+                <div>
+                    <h5>Karbonn 7 Kg Semi Automatic Top Load Washing Machine, White/Red, KJC70S-2024L</h5>
+                    <p style="padding-top: 2px; color: gray;">Price: 4500</p>
+                    <p style="padding-top: 2px; color: gray;">Offer Price : 2800</p>
+                </div>
+            </div>
+        </div>  
+        <div>
+            <div>
+                <div>
+                    <img width="100%" src="https://www.reliancedigital.in/medias/SANSUI-JSP70S-2024L-Washing-Machines-492664389-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MjA0N3xpbWFnZS9qcGVnfGltYWdlcy9oM2IvaDUyLzk4OTQ2NjUzMjI1MjYuanBnfDRmMWJiNzhkOTRhYWM5NDMxMjk4M2VjOTMzMGE1ODk5M2JiNDc5NzE2YzYxMmEyMTRkMTI0NmI4YjdjMzJiOGU" alt="">
+                </div>
+                <div>
+                    <h5>Karbonn 7 Kg Semi Automatic Top Load Washing Machine, White/Red, KJC70S-2024L</h5>
+                    <p style="padding-top: 2px; color: gray;">Price: 4500</p>
+                    <p style="padding-top: 2px; color: gray;">Offer Price : 2800</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HP Special - Laptops and Peripherals -->
+    <div class="HP-Special">
+        <h2>HP Special - Laptops and Peripherals</h2>
+        <!-- <button></button> -->
+    </div>
+
+    <div id="HpSpecial">
+        <div>
+            <div>
+                <div>
+                    <img width="100%" src="https://www.reliancedigital.in/medias/HP-6K7X3PA-High-End-Laptops-492850679-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2ODcwOXxpbWFnZS9qcGVnfGltYWdlcy9oZjcvaDc2Lzk4NTIzNzU5OTAzMDIuanBnfDhjNDMzZjgyODgyMDNkMTY0MDBlZTk3NmEzODQxODkwZDNhZGYwNTJiYTk5N2E4YzYwZWQ0OGZkYjc4ZjBjNDQ" alt="">
+                </div>
+                <div>
+                 <h5>Karbonn 7 Kg Semi Automatic Top Load Washing Machine, White/Red, KJC70S-2024L</h5>
+                 <p style="padding-top: 2px; color: gray;">Price: 4500</p>
+                 <p style="padding-top: 2px; color: gray;">Offer Price : 2800</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <img width="100%" src="https://www.reliancedigital.in/medias/HP-6Q2M3PA-ACJ-Laptop-493177049-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDMwM3xpbWFnZS9qcGVnfGltYWdlcy9oZDgvaDYyLzk4NjQyODcwNTk5OTguanBnfGI5YjAxYjQ4MjliZjhjODU0NWY0NjJkODQ0MmJhZmI5Y2RmZTQ1NGZhZTg2MWFiOTRjMjQ2MzdjMzIwODg4Yjk" alt="">
+                </div>
+                <div>
+                 <h5>Karbonn 7 Kg Semi Automatic Top Load Washing Machine, White/Red, KJC70S-2024L</h5>
+                 <p style="padding-top: 2px; color: gray;">Price: 4500</p>
+                 <p style="padding-top: 2px; color: gray;">Offer Price : 2800</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <img width="100%" src="https://www.reliancedigital.in/medias/HP-6D4L1PA-ACJ-Laptop-492850167-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyODMxNHxpbWFnZS9qcGVnfGltYWdlcy9oYTYvaDJmLzk4NDQ5NzgzNTIxNTguanBnfDhjMGVhZDc1N2MyZGUyODgxZDQ3MDA4ODg4M2Y4YmE1YTk2ODMyNTNhMDEzYzNjYjUzOTY0YjliZDc0NWQ3N2Y" alt="">
+                </div>
+                <div>
+                 <h5>Karbonn 7 Kg Semi Automatic Top Load Washing Machine, White/Red, KJC70S-2024L</h5>
+                 <p style="padding-top: 2px; color: gray;">Price: 4500</p>
+                 <p style="padding-top: 2px; color: gray;">Offer Price : 2800</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <img width="100%" src="https://www.reliancedigital.in/medias/HP-6D4L1PA-ACJ-Laptop-492850167-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyODMxNHxpbWFnZS9qcGVnfGltYWdlcy9oYTYvaDJmLzk4NDQ5NzgzNTIxNTguanBnfDhjMGVhZDc1N2MyZGUyODgxZDQ3MDA4ODg4M2Y4YmE1YTk2ODMyNTNhMDEzYzNjYjUzOTY0YjliZDc0NWQ3N2Y" alt="">
+                </div>
+                <div>
+                 <h5>Karbonn 7 Kg Semi Automatic Top Load Washing Machine, White/Red, KJC70S-2024L</h5>
+                 <p style="padding-top: 2px; color: gray;">Price: 4500</p>
+                 <p style="padding-top: 2px; color: gray;">Offer Price : 2800</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <img width="100%" src="https://www.reliancedigital.in/medias/HP-Pavilion-15-eg2002TU-Laptop-492849709-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDA2NDl8aW1hZ2UvanBlZ3xpbWFnZXMvaGU2L2gwYS85ODAwOTc5NTEzMzc0LmpwZ3w3NmY1ZDJkMGY0NTFkMThjYzIzMTgxZDE2M2UzMzZmNTI1NTlmNGRjZDdmNDhmZDhhMzFhMDdjZjI2YTQ0N2Ux" alt="">
+                </div>
+                <div>
+                 <h5>Karbonn 7 Kg Semi Automatic Top Load Washing Machine, White/Red, KJC70S-2024L</h5>
+                 <p style="padding-top: 2px; color: gray;">Price: 4500</p>
+                 <p style="padding-top: 2px; color: gray;">Offer Price : 2800</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script src="Home.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
