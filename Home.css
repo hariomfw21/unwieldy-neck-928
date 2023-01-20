@@ -1,4 +1,4 @@
-*{
+.margin{
     margin: 0;
     padding:0;
     font-family: "Lato", sans-serif;
@@ -157,11 +157,12 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #homeappliences>div{
     /* border: 1px solid black; */
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
 }
 
 #homeappliences>div>div{
@@ -184,12 +185,13 @@
      display: grid;
      grid-template-columns: repeat(5,1fr);
      gap: 1.5rem;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #HpSpecial>div{
     /* border: 1px solid black; */
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
 }
 
 #HpSpecial>div>div{
@@ -200,6 +202,31 @@
     padding: 15px;
     height: 60%;
 }
+
+/* home Appliences fest */
+
+.HomApplianceFest{
+    padding: 15px
+}
+
+#HomeAppliancesFest{
+     /* border: 1px solid red; */
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     gap: 1rem;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#HomeAppliancesFest>div{
+    padding: 10px;
+}
+
+#HomeAppliancesFest>div>div{
+    height: 90%;
+}
+
+
 
 
 
