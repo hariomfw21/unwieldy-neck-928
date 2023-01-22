@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        * {
+            font-family: Roboto, "system-ui", sans-serif;
+        }
+
+        #midCont {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        #midL {
+            width: 40%;
+            text-align: center;
+        }
+
+        #midR {
+            width: 58%;
+            /* border: 1px solid red; */
+        }
+
+        #head {
+            width: 100%;
+            height: 28%;
+        }
+
+        #body {
+            display: flex;
+            justify-content: space-between;
+            height: 75%;
+        }
+
+        #dis {
+            width: 50%;
+            height: 96%;
+        }
+
+        #price {
+            width: 49%;
+            height: 96%;
+            /* border: 1px solid red; */
+        }
+
+        #midL>img {
+            width: 60%;
+            margin-top: 60px;
+        }
+
+        #price>div {
+            width: 100%;
+            /* border: 1px solid red; */
+            height: 15%;
+        }
+
+        #price>div {
+            display: flex;
+        }
+
+        #pin {
+            width: 50%;
+            height: 30px;
+            font-weight: bold;
+        }
+
+        #check {
+            width: 70px;
+            height: 36px;
+            color: white;
+            background-color: #e42529;
+            border: 0px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        #cartbutton {
+            width: 48%;
+            height: 50px;
+            color: white;
+            background-color: #e42529;
+            border: 0px;
+            font-size: larger;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        #buybutton {
+            width: 48%;
+            height: 50px;
+            color: white;
+            background-color: #fc6027;
+            border: 0px;
+            font-size: larger;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        #cartbutton:hover {
+            background-color: #003380;
+        }
+
+        #check:hover {
+            background-color: #003380;
+        }
+
+        #cb {
+            justify-content: space-between;
+        }
+
+        #price>div>p {
+            font-size: larger;
+            margin-right: 10px;
+        }
+
+        #dot {
+            color: green;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        #deal {
+            font-weight: bolder;
+            color: #003380;
+        }
+
+        #save {
+            font-weight: bold;
+        }
+
+        #mrp {
+            text-decoration: line-through;
+        }
+
+        #line {
+            border-bottom: 1px solid gray;
+            width: 100%;
+            height: 25px;
+            /* font-size: smaller; */
+        }
+
+
+
+
+
+
+        /* ------------------footer start-------------------*/
+
+        footer {
+            background-color: #003380;
+        }
+
+        #footer {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            line-height: 32px;
+            background-color: #003380;
+            color: white;
+            margin-top: 100px;
+            padding: 20px 0px 0px 0px;
+
+        }
+
+        #footer ul {
+            list-style-type: none;
+            font-size: medium;
+        }
+
+        #footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        #footer a:hover {
+            border-bottom: 1px solid rgb(250, 255, 250);
+        }
+
+        #footerSocial {
+            display: flex;
+            margin: auto;
+            margin-top: 40px;
+            line-height: 30px;
+            width: 95%;
+        }
+
+        #footerSocial>div:nth-child(1) {
+            width: 30%;
+            padding-left: 40px;
+            color: whitesmoke;
+        }
+
+        #footerSocial>div:nth-child(2) {
+            width: 70%;
+            color: whitesmoke;
+        }
+
+        .image-icon {
+            height: 35px;
+            margin-bottom: 20px;
+        }
+
+        .socialmedialogo {
+            height: 15px;
+            margin-right: 10px;
+        }
+
+        #footorlogo>a>img {
+            width: 40%;
+            margin-left: 0px;
+        }
+
+        #bottom {
+            text-align: center;
+            font-weight: 200;
+            background-color: #0a244a;
+            line-height: 25px;
+            color: rgb(255, 255, 255);
+        }
+
+        #bottom>p {
+            width: 90%;
+            margin: auto;
+            padding: 15px;
+            font-family: system-ui;
+
+            font-weight: lighter;
+        }
+
+        hr {
+            border: none;
+            border-bottom: 1px solid rgb(210, 187, 187);
+        }
+
+        /* ------------------footer end-------------------*/
+    </style>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+
+    <div id="nev-bar">
+        <div id="nev-1">
+            <div></div>
+            <div></div>
+            <div class="aboutNev1">
+                <a href="">Find a store |</a>
+                <a href="">Buying guides |</a>
+                <a href=""> Contact us</a>
+            </div>
+        </div>
+        <div id="nev-2">
+            <div class="logo">
+                <a href="Home.html"> <img style="width: 35%; margin-top: -4.5rem;" src="./LOGO/Retailer Basket-logos_transparent.png" alt=""></a>
+            </div>
+            <div class="searchBox">
+                <form>
+                    <input type="text" id="search-box" placeholder="Find your favorite products" name="search" />
+                    <button type="submit" id="search-icon" class="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+            <div class="aboutNev2">
+                <a href="">Select your Pin Code |</a>
+                <a href="cart.html">Cart |</a>
+                <a href=""> Login</a>
+            </div>
+        </div>
+    </div>
+    <div id="dropdown-nav">
+        <button onmouseover="openDropdownM()">MOBILES & TABLETS ▽</button>
+        <button onmouseover="openDropdownT()">TELIVISION ▽</button>
+        <button onmouseover="openDropdownA()">AUDIO ▽</button>
+        <button onmouseover="openDropdownH()">HOME APPLIENCES ▽</button>
+        <button onmouseover="openDropdownC()">COMPUTER ▽</button>
+        <button onmouseover="openDropdownCa()">CAMERA ▽</button>
+        <button onmouseover="openDropdownK()">KITCHEN APPLIENCES ▽</button>
+        <button onmouseover="openDropdownP()">PRESONAL CARE ▽</button>
+        <button onmouseover="openDropdownA()">ACCESSORIES ▽</button>
+    </div>
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <div id="dropdown" onmouseleave="closeNev()">
+       
+    </div>
+
+
+            <!-- Nav End -->
+
+
+
+
+            <div id="line"></div>
+            <div id="midCont">
+                <div id="midL">
+                    <img id="imgp" src="" alt="">
+                </div>
+                <div id="midR">
+                    <div id="head">
+                        <p id="articleId">Article ID: 492850573</p>
+                        <h2 id="title">Ambrane Wise Spirit Smart Watch with Bluetooth Calling 4.29 cm (1.69 Inch) Lucid
+                            Display, 60 Plus Sports Modes, 24x7 Health Monitor, Built-in Speaker and Mic</h2>
+                        <hr>
+                    </div>
+
+                    <div id="body">
+                        <div id="dis">
+                            <h3>Key Features</h3>
+                            <p id="discription">
+                            </p>
+                            <h3>Warranty</h3>
+                            <p>1 Year manufacturer warrenty</p>
+                            <h3>return policy</h3>
+                            <p>Items are eligible for return within 7 days of Delivery.</p>
+                        </div>
+                        <div id="price">
+                            <div>
+                                <p>Deal Price: </p>
+                                <p id="deal"></p>
+                            </div>
+                            <div>
+                                <p>MRP</p>
+                                <p id="mrp"></p>
+                            </div>
+                            <p id="save">You Save 9%</p>
+                            <h3>FREE SHIPING</h3>
+                            <div>
+                                <input type="text" placeholder="Enter PIN CODE" id="pin">
+                                <button id="check" onclick="check()">check </button>
+                            </div>
+                            <p id="dot"> </p>
+                            <div id="cb">
+                                <button id="cartbutton">ADD TO CART</button>
+                                <button id="buybutton">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- footer start -->
+
+            <footer>
+
+
+
+
+
+
+
+
+                <div>
+                    <div id="footer">
+                        <div>
+                            <ul>PRODUCT CATAGORIES
+
+                                <li><a href="#">Smartphones</a></li>
+                                <li><a href="#">Laptops</a></li>
+                                <li><a href="#">DSLR Cameras</a></li>
+                                <li><a href="#">Televisions</a></li>
+                                <li><a href="#">Air conditioners</a></li>
+                                <li><a href="#">Refrigerators</a></li>
+                                <li><a href="#">Kitchen Appliances</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Personal Care & Grooming</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul>SITE INFO
+
+                                <li><a href="#">About Reliance Digital</a></li>
+                                <li><a href="#">resQ Services</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                                <li><a href="#">Corporate Enquires</a></li>
+                                <li><a href="#">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul>RESOURCE CENTER
+
+                                <li><a href="#">Product Reviews</a></li>
+                                <li><a href="#">Buying Guides</a></li>
+                                <li><a href="#">How Tos</a></li>
+                                <li><a href="#">Featured Stories</a></li>
+                                <li><a href="#">Event & Happenings</a></li>
+
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul>POLICIES
+
+                                <li><a href="#">Terms of use</a></li>
+                                <li><a href="#">Cancellation and Retruns</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">E-waste Policy</a></li>
+                                <li><a href="#">EMI Terms and Conditions</a></li>
+                                <li><a href="#">Pricing and Payments Policy</a></li>
+                                <li><a href="#">Delivery & Shipping Policy</a></li>
+                                <li><a href="#">Apna E-Store Maha Cashback T&C</a></li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div id="footerSocial">
+                        <div>
+                            <h4>FOLLOW US</h4>
+                            <a href="#"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8IpEU3sOxQxNjMw3VAoSWsekRpvgOvjziQ&usqp=CAU"
+                                    alt="" class="socialmedialogo"></a>
+                            <a href="#"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQuQ1WZVJ3GUDCgjBkdoi29hZKhG2jqSJm2A&usqp=CAU"
+                                    alt="" class="socialmedialogo"></a>
+                            <a href="#"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49-2NdYCnhN07iUFqsG_ExFiP3QjH9s9naA&usqp=CAU"
+                                    alt="" class="socialmedialogo"></a>
+                        </div>
+
+                        <div>
+                            <h4>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h4>
+                            <img src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt=""
+                                class="image-icon">
+                            <img src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png" alt=""
+                                class="image-icon">
+                        </div>
+
+
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div id="footorlogo">
+                            <a href="#top"> <img src="image\logoFooter.jpg" alt="logo"></a>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div id="bottom">
+                    <p>Disclaimer</p>
+                    <p>Product prices, offers and availability are subject to change from time to time. All prices are
+                        inclusive of taxes. Product colours & images are only for illustration and they may not exactly
+                        match with the actual product. Product specs are subject to change & may vary from actual
+                        product. While every care is taken to avoid inaccuracies in content, these are provided as is,
+                        without warranty of any kind.</p>
+
+                    <hr>
+                    <p> © 2022 Reliance Digital. All Rights Reserved.</p>
+
+                </div>
+            </footer>
+
+
+    </body>
+
+</html>
+<script>
+    let obj = JSON.parse(localStorage.getItem("product_details"));
+    let n = obj["title"];
+    document.querySelector("#imgp").src = obj.avatar;
+    document.querySelector("#title").innerText = n;
+    document.querySelector("#discription").innerText = obj["discription"];
+    document.querySelector("#deal").innerText = "  ₹ " + obj["price"];
+    document.querySelector("#mrp").innerText = "  ₹ " + (Number(obj["price"]) + 100);
+    document.querySelector("#save").innerText = "You save " + Math.floor((100 / (Number(obj["price"]) + 100)) * 100) + " %";
+    document.querySelector("#articleId").innerText = "Article ID: " + Number(Math.floor((Math.random() * 12345678) + 1234567));
+    function check() {
+        document.querySelector("#dot").innerText = "*COD: not avilable"
+    }
+    // document.querySelector("#line").innerText = "Home > Products > " + obj["category"] + " >  " + obj["brand"] + "  >  " + obj["title"];
+   
+ 
+    let user_login = localStorage.getItem("user_login") || false;
+    if (user_login) {
+        let a = localStorage.getItem("fName")||localStorage.getItem("againName");
+        document.querySelector("#user_name").innerText = "Hi, " + a;
+document.getElementById("logout_btn").style.display="flex"
+    }
+
+    let user_logout = document.getElementById("logout_btn");
+    user_logout.addEventListener("click",()=>{
+        localStorage.removeItem("user_login");
+        localStorage.removeItem("fName");
+         document.querySelector("#user_name").innerText = localStorage.getItem("loginIcon");
+        document.getElementById("logout_btn").style.display="none"
+        document.querySelector("#user_name").innerHTML = `<img src="./image/account.png"}>Login`
+         window.location.href="index.html"
+    });
+
+</script>

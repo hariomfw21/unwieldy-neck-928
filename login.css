@@ -1,0 +1,58 @@
+#body{
+   margin: 0px;
+   padding: 0px;
+}
+#Register-main-div{
+    /* border: 1px solid red; */
+    height: 35rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.register-div-icon{
+    width: 70%;
+    height: auto;
+
+}
+
+.register-div-icon>img{
+    width: 100%;
+}
+
+.register-form{
+    width: 28%;
+    /* border: 1px solid red */
+}
+
+.register-form>div{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; 
+  margin-left: 5rem;
+  margin-right: 2rem;
+  margin-top: 6rem;
+}
+
+.register-form>div>form>input:nth-child(2){
+    padding: 2rem;
+    color: red;
+}
+
+.input-form{
+     padding: 0.8rem; 
+     font-weight: bolder;
+     width: 90%; 
+}
+
+.btn-submit{
+     margin-top: 1rem; 
+     width: 100%; 
+     background-color: red;
+     padding: 0.8rem; 
+     font-weight: bolder; 
+     border: none;
+     color: aliceblue;
+}
+
+.btn-submit:hover{
+    background-color: blue;
+}
+

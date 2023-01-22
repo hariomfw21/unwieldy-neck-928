@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Home.css">
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="register.css">
+<body id="body">
+    <!-- Nev-bar -->
+    <div id="nev-bar">
+        <div id="nev-1">
+            <div></div>
+            <div></div>
+            <div class="aboutNev1">
+                <a href="">Find a store |</a>
+                <a href="">Buying guides |</a>
+                <a href=""> Contact us</a>
+            </div>
+        </div>
+        <div id="nev-2">
+            <div class="logo">
+                <a href="Home.html"> <img style="width: 35%; margin-top: -4.5rem;" src="./LOGO/Retailer Basket-logos_transparent.png" alt=""></a>
+            </div>
+            <div class="searchBox">
+                <form>
+                    <input type="text" id="search-box" placeholder="Find your favorite products" name="search" />
+                    <button type="submit" id="search-icon" class="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+            <div class="aboutNev2">
+                <a href="">Select your Pin Code |</a>
+                <a href="cart.html">Cart |</a>
+                <a href=""> Login</a>
+            </div>
+        </div>
+    </div>
+    <div id="dropdown-nav">
+        <button onmouseover="openDropdownM()">MOBILES & TABLETS</button>
+        <button onmouseover="openDropdownT()">TELIVISION </button>
+        <button onmouseover="openDropdownA()">AUDIO </button>
+        <button onmouseover="openDropdownH()">HOME APPLIENCES </button>
+        <button onmouseover="openDropdownC()">COMPUTER</button>
+        <button onmouseover="openDropdownCa()">CAMERA</button>
+        <button onmouseover="openDropdownK()">KITCHEN APPLIENCES</button>
+        <button onmouseover="openDropdownP()">PRESONAL CARE</button>
+        <button onmouseover="openDropdownA()">ACCESSORIES</button>
+    </div>
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <div id="dropdown" onmouseleave="closeNev()">
+       
+    </div>
+    <br>
+    <!-- Nev-bar End -->
+
+    <!-- Register form  -->
+  <div class="register-div-main">
+   
+        <h3 style="margin-left: 8px;">Register New Account</h3>
+        <input id="f" class="input-div" type="text" name="Enter Your First Name" placeholder="First Name"><br>
+        <input id="l" class="input-div" type="text" name="Enter Your Last Name" placeholder="Last Name"><br>
+        <input id="mail" class="input-div" type="text" name="Enter Your Email Adress" placeholder="Enter Your Email Adress"><br>
+        <input id="mob" class="input-div" type="text" name="Mobile Number" placeholder="Mobile Number">
+        <!-- <input id="input-submit" class="input-div" type="submit"><br> -->
+        <button onclick="my()" id="input-submit" class="input-div">Submit</button>
+        <!-- <a class="ancer" href="login.html">Already Have a account</a> -->
+
+
+  </div>
+
+
+
+
+    <!-- Register form end -->
+
+   
+    <br>
+    <footer>
+        <div id="footer">
+            <div>
+               
+                <ul class="ul">
+                    <h3>Products Catogeries</h3>
+                    <li class="li-buttonF">Smartphone</li>
+                    <li class="li-buttonF">Laptop</li>
+                    <li class="li-buttonF">Watches</li>
+                    <li class="li-buttonF">Air conditinor</li>
+                    <li class="li-buttonF">Refrigarots</li>
+                    <li class="li-buttonF">Kitchen Appliences</li>
+                    <li class="li-buttonF">Presonal</li>
+                    <li class="li-buttonF">Healthcare</li>
+                    <li class="li-buttonF">Gaming</li>
+                </ul>
+            </div>
+            <div>
+      
+                <ul class="ul">
+                    <h3>Site Info</h3>
+                    <li class="li-buttonF">About Reliance Digital</li>
+                    <li class="li-buttonF">resQ Services</li>
+                    <li class="li-buttonF">Gift Cards</li>
+                    <li class="li-buttonF">Site Map</li>
+                    <li class="li-buttonF">Corporate Enquires</li>
+                    <li class="li-buttonF">Contact Us</li>
+                </ul>
+            </div>
+            <div>       
+                <ul class="ul">
+                    <h3>Resources Center</h3>
+                    <li class="li-buttonF">Product Reviews</li>
+                    <li class="li-buttonF">Buying Guides</li>
+                    <li class="li-buttonF">How Tos</li>
+                    <li class="li-buttonF">Featured Stories</li>
+                    <li class="li-buttonF">Event & Happenings</li>
+                </ul>
+            </div>
+            <div>       
+                <ul class="ul">
+                    <h3>Policies</h3>
+                    <li class="li-buttonF">Terms of use</li>
+                    <li class="li-buttonF">Cancellation and Retruns</li>
+                    <li class="li-buttonF">Privacy Policy</li>
+                    <li class="li-buttonF">E-waste Policy</li>
+                    <li class="li-buttonF">Pricing and Payments Policy</li>
+                    <li class="li-buttonF">Delivery & Shipping Policy</li>
+                    <li class="li-buttonF">Apna E-Store Maha Cashback T&C</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <h3 style="margin-left: 2rem; color: aliceblue;">FOLLOW US</h3>
+            <h3 style="margin-left: 14rem; color: aliceblue;">EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h3>  
+        </div>
+        <div class="footer-bottom">
+            <div>
+                <a href="#"><img width="4%"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8IpEU3sOxQxNjMw3VAoSWsekRpvgOvjziQ&usqp=CAU"
+                    alt="" class="socialmedialogo"></a>
+                <a href="#"><img width="6.5%"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQuQ1WZVJ3GUDCgjBkdoi29hZKhG2jqSJm2A&usqp=CAU"
+                    alt="" class="socialmedialogo"></a>
+               <a href="#"><img width="8.5%"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49-2NdYCnhN07iUFqsG_ExFiP3QjH9s9naA&usqp=CAU"
+                    alt="" class="socialmedialogo"></a>
+            </div>
+
+            <div>
+                <img width="25%" src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt=""
+                    class="image-icon">
+                <img width="25%" src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png" alt=""
+                    class="image-icon">
+            </div>
+        </div>
+        <div class="fotter-color-bott">
+            <h3 style="text-decoration: underline;">Disclaimer</h3>
+           <p style="font-size: smaller;">Product prices, offers and availability are subject to change from time to time. All prices are inclusive of taxes. Product colours & images are only for illustration and they may not exactly match with the actual product. Product specs are subject to change & may vary from actual product. While every care is taken to avoid inaccuracies in content, these are provided as is, without warranty of any kind.</p>
+           <hr>
+          <p style="font-size: smaller; padding-bottom: 1rem;"> © 2023 Reliance Digital. All Rights Reserved.</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
+<script src="Home.js"></script>
+<script>
+    let no = localStorage.getItem("num");
+    document.querySelector("#mob").value = no;
+    function my() {
+
+        let fName = document.querySelector("#f").value;
+        let email = document.querySelector("#mail").value;
+        localStorage.setItem("fName", fName);
+        localStorage.setItem("againName", fName);
+        localStorage.setItem("email", email);
+        localStorage.setItem("loginIcon","Login")
+        localStorage.setItem("logoutIcon","Logout")
+        alert("login successful");
+        localStorage.setItem("user_login",true);
+        window.location.href = "Home.html";
+    }
+</script>

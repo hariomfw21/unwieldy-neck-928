@@ -1,0 +1,35 @@
+.register-div-main{
+    /* border: 5px solid red; */
+    height: auto;
+    width: 30%;
+    margin-left: 34rem;
+}
+
+.input-div{
+    padding: 0.9rem;
+    width: 80%;
+    margin-top: 10px;
+}
+
+#input-submit{
+    width: 87%;
+    color: aliceblue;
+    background-color: red;
+    text-decoration: none;
+    border: none;
+    font-size: larger;
+    font-weight: bold
+}
+
+#input-submit:hover{
+    background-color: blue;
+}
+
+
+.ancer{
+    margin-left: 15.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: brown;
+
+}

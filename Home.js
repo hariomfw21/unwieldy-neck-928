@@ -127,3 +127,20 @@ function openDropdownA(){
     document.getElementById("dropdown").style.width = "0";
  }
 
+ let user_login = localStorage.getItem("user_login") || false;
+ if (user_login) {
+     let a = localStorage.getItem("fName")||localStorage.getItem("againName");
+     document.querySelector("#user_name").innerText = "Hi, " + a;
+     document.getElementById("logout_btn").style.display="flex"
+ }
+
+ let user_logout = document.getElementById("logout_btn");
+     user_logout.addEventListener("click",()=>{
+     localStorage.removeItem("user_login");
+     localStorage.removeItem("fName");
+      document.querySelector("#user_name").innerText = localStorage.getItem("loginIcon");
+     document.getElementById("logout_btn").style.display="none"
+     document.querySelector("#user_name").innerHTML = `<img src="./image/account.png"}>Login`
+      window.location.href="Home.html"
+ });
+

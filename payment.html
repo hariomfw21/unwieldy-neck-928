@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="Home.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color:red;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+    <div id="nev-bar">
+        <div id="nev-1">
+            <div></div>
+            <div></div>
+            <div class="aboutNev1">
+                <a href="">Find a store |</a>
+                <a href="">Buying guides |</a>
+                <a href=""> Contact us</a>
+            </div>
+        </div>
+        <div id="nev-2">
+            <div class="logo">
+                <a href="Home.html"> <img style="width: 35%; margin-top: -4.5rem;" src="./LOGO/Retailer Basket-logos_transparent.png" alt=""></a>
+            </div>
+            <div class="searchBox">
+                <form>
+                    <input type="text" id="search-box" placeholder="Find your favorite products" name="search" />
+                    <button type="submit" id="search-icon" class="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+            <div class="aboutNev2">
+                <a href="">Select your Pin Code |</a>
+                <a href="cart.html">Cart |</a>
+                <a href=""> Login</a>
+            </div>
+        </div>
+    </div>
+    <div id="dropdown-nav">
+        <button onmouseover="openDropdownM()">MOBILES & TABLETS ▽</button>
+        <button onmouseover="openDropdownT()">TELIVISION ▽</button>
+        <button onmouseover="openDropdownA()">AUDIO ▽</button>
+        <button onmouseover="openDropdownH()">HOME APPLIENCES ▽</button>
+        <button onmouseover="openDropdownC()">COMPUTER ▽</button>
+        <button onmouseover="openDropdownCa()">CAMERA ▽</button>
+        <button onmouseover="openDropdownK()">KITCHEN APPLIENCES ▽</button>
+        <button onmouseover="openDropdownP()">PRESONAL CARE ▽</button>
+        <button onmouseover="openDropdownA()">ACCESSORIES ▽</button>
+    </div>
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <div id="dropdown" onmouseleave="closeNev()">
+       
+    </div>
+    <!-- Nev-End -->
+    <br>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter Your Full Name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Name@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Samastipur Bihar">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Bihar,India">
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="BR">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="848101">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Name on Credit Card">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xx00">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2030">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <button class="btn">Continue to checkout</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div>
+  </div>
+</div>
+
+<br>
+<footer>
+    <div id="footer">
+        <div>
+           
+            <ul class="ul">
+                <h3>Products Catogeries</h3>
+                <li class="li-buttonF">Smartphone</li>
+                <li class="li-buttonF">Laptop</li>
+                <li class="li-buttonF">Watches</li>
+                <li class="li-buttonF">Air conditinor</li>
+                <li class="li-buttonF">Refrigarots</li>
+                <li class="li-buttonF">Kitchen Appliences</li>
+                <li class="li-buttonF">Presonal</li>
+                <li class="li-buttonF">Healthcare</li>
+                <li class="li-buttonF">Gaming</li>
+            </ul>
+        </div>
+        <div>
+  
+            <ul class="ul">
+                <h3>Site Info</h3>
+                <li class="li-buttonF">About Reliance Digital</li>
+                <li class="li-buttonF">resQ Services</li>
+                <li class="li-buttonF">Gift Cards</li>
+                <li class="li-buttonF">Site Map</li>
+                <li class="li-buttonF">Corporate Enquires</li>
+                <li class="li-buttonF">Contact Us</li>
+            </ul>
+        </div>
+        <div>       
+            <ul class="ul">
+                <h3>Resources Center</h3>
+                <li class="li-buttonF">Product Reviews</li>
+                <li class="li-buttonF">Buying Guides</li>
+                <li class="li-buttonF">How Tos</li>
+                <li class="li-buttonF">Featured Stories</li>
+                <li class="li-buttonF">Event & Happenings</li>
+            </ul>
+        </div>
+        <div>       
+            <ul class="ul">
+                <h3>Policies</h3>
+                <li class="li-buttonF">Terms of use</li>
+                <li class="li-buttonF">Cancellation and Retruns</li>
+                <li class="li-buttonF">Privacy Policy</li>
+                <li class="li-buttonF">E-waste Policy</li>
+                <li class="li-buttonF">Pricing and Payments Policy</li>
+                <li class="li-buttonF">Delivery & Shipping Policy</li>
+                <li class="li-buttonF">Apna E-Store Maha Cashback T&C</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <h3 style="margin-left: 2rem; color: aliceblue;">FOLLOW US</h3>
+        <h3 style="margin-left: 14rem; color: aliceblue;">EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h3>  
+    </div>
+    <div class="footer-bottom">
+        <div>
+            <a href="#"><img width="4%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8IpEU3sOxQxNjMw3VAoSWsekRpvgOvjziQ&usqp=CAU"
+                alt="" class="socialmedialogo"></a>
+            <a href="#"><img width="6.5%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQuQ1WZVJ3GUDCgjBkdoi29hZKhG2jqSJm2A&usqp=CAU"
+                alt="" class="socialmedialogo"></a>
+           <a href="#"><img width="8.5%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49-2NdYCnhN07iUFqsG_ExFiP3QjH9s9naA&usqp=CAU"
+                alt="" class="socialmedialogo"></a>
+        </div>
+
+        <div>
+            <img width="25%" src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt=""
+                class="image-icon">
+            <img width="25%" src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png" alt=""
+                class="image-icon">
+        </div>
+    </div>
+    <div class="fotter-color-bott">
+        <h3 style="text-decoration: underline;">Disclaimer</h3>
+       <p style="font-size: smaller;">Product prices, offers and availability are subject to change from time to time. All prices are inclusive of taxes. Product colours & images are only for illustration and they may not exactly match with the actual product. Product specs are subject to change & may vary from actual product. While every care is taken to avoid inaccuracies in content, these are provided as is, without warranty of any kind.</p>
+       <hr>
+      <p style="font-size: smaller; padding-bottom: 1rem;"> © 2023 Reliance Digital. All Rights Reserved.</p>
+    </div>
+    
+</footer>
+
+</body>
+</html>
+<script>
+  var checkoutbutton = document.querySelector(".btn")
+  checkoutbutton.addEventListener('click',function(){
+    alert("Item Diliverd Soon")
+  })
+  
+</script>

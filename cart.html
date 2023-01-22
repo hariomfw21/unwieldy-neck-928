@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retailer | cart</title>
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        * {
+            font-family: Roboto, "system-ui", sans-serif;
+        }
+
+        /* ------------------Navigation bar start -------------------*/
+
+        #cont {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+        }
+
+        #cl {
+            width: 60%;
+            /* border: 1px solid red; */
+
+        }
+
+        #cr {
+            width: 26%;
+        }
+
+        #checkout {
+            width: 100%;
+            background-color: #e42529;
+            height: 40px;
+            border: 0px;
+            border-radius: 3px;
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+
+        }
+
+        #checkout:hover {
+            cursor: pointer;
+            background-color: #003380;
+        }
+
+        #crbody {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            height: 300px;
+            width: 95%;
+            margin-top: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+
+        #crbody>div {
+
+            height: 17%;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        #input {
+            width: 250px;
+            height: 30px;
+            border: 1px solid rgb(93, 146, 239);
+            border-radius: 4px;
+            color: rgb(93, 146, 239);
+        }
+
+        #check {
+            width: 100px;
+            height: 34px;
+            background-color: white;
+            border: 1px solid rgb(93, 146, 239);
+            font-weight: bold;
+            color: rgb(93, 146, 239);
+            border-radius: 4px;
+        }
+
+        #check:hover {
+            background-color: rgb(93, 146, 239);
+            color: white;
+            cursor: pointer;
+        }
+
+        .p {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .pp {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #cl>div {
+            /* border: 1px solid red; */
+            height: 230px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding-right: 30px;
+        }
+
+        #cl>div>div:nth-child(1) {
+            /* border: 1px solid black; */
+            width: 18%;
+        }
+
+        #cl>div>div:nth-child(2) {
+            /* border: 1px solid black; */
+            width: 46%;
+        }
+
+        #cl>div>div:nth-child(3) {
+            /* border: 1px solid black; */
+            width: 30%;
+            text-align: right;
+        }
+
+        #cl>div>div:nth-child(1)>img {
+            width: 100%;
+            margin-top: 35px;
+        }
+
+        #cl>div>div:nth-child(1)>img:hover {
+            cursor: pointer;
+        }
+
+        #cl>div>div:nth-child(2)>button:hover {
+            cursor: pointer;
+            background-color: #003380;
+            border: 0px;
+        }
+
+        #cl>div>div:nth-child(2)>input {
+            width: 30px;
+        }
+
+        #cl>div>div:nth-child(2)>h3:hover {
+            cursor: pointer;
+        }
+
+        #line {
+            border-bottom: 1px solid gray;
+            width: 100%;
+            height: 25px;
+            /* font-size: smaller; */
+        }
+    </style>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+    <!-- Nev start -->
+    <div id="nev-bar">
+        <div id="nev-1">
+            <div></div>
+            <div></div>
+            <div class="aboutNev1">
+                <a href="">Find a store |</a>
+                <a href="">Buying guides |</a>
+                <a href=""> Contact us</a>
+            </div>
+        </div>
+        <div id="nev-2">
+            <div class="logo">
+                <a href="Home.html"> <img style="width: 35%; margin-top: -4.5rem;" src="./LOGO/Retailer Basket-logos_transparent.png" alt=""></a>
+            </div>
+            <div class="searchBox">
+                <form>
+                    <input type="text" id="search-box" placeholder="Find your favorite products" name="search" />
+                    <button type="submit" id="search-icon" class="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+            <div class="aboutNev2">
+                <a href="">Select your Pin Code |</a>
+                <a href="">Cart |</a>
+                <a href=""> Login</a>
+            </div>
+        </div>
+    </div>
+    <div id="dropdown-nav">
+        <button onmouseover="openDropdownM()">MOBILES & TABLETS ▽</button>
+        <button onmouseover="openDropdownT()">TELIVISION ▽</button>
+        <button onmouseover="openDropdownA()">AUDIO ▽</button>
+        <button onmouseover="openDropdownH()">HOME APPLIENCES ▽</button>
+        <button onmouseover="openDropdownC()">COMPUTER ▽</button>
+        <button onmouseover="openDropdownCa()">CAMERA ▽</button>
+        <button onmouseover="openDropdownK()">KITCHEN APPLIENCES ▽</button>
+        <button onmouseover="openDropdownP()">PRESONAL CARE ▽</button>
+        <button onmouseover="openDropdownA()">ACCESSORIES ▽</button>
+    </div>
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <!-- dropdown  -->
+    <div id="dropdown" onmouseleave="closeNev()">
+       
+    </div>
+
+ 
+
+
+
+            <!-- Nav End -->
+
+
+            <div id="line"></div>
+            <div id="cont">
+                <div id="cl"></div>
+                <div id="cr">
+
+                    <button id="checkout" onclick="ch()">CHECKOUT</button>
+                    <div id="crbody">
+                        <div>
+                            <input type="text" placeholder="COUPON CODE" id="input">
+                            <button id="check" onclick="coupon()">check </button>
+                            <hr>
+                        </div>
+                        <p class="pp" id="pd">PRICE DETAILS</p>
+                        <Div class="p">
+                            <p>price</p>
+                            <p class="price"></p>
+                        </Div>
+                        <Div class="p">
+                            <p>Delivery Charges</p>
+                            <p>FREE</p>
+                        </Div>
+                        <hr>
+                        <Div class="pp">
+                            <p>AMOUNT PAYABLE</p>
+                            <p id="rice"></p>
+                        </Div>
+                    </div>
+
+                </div>
+            </div>
+
+<br>
+            <!-- footer start -->
+
+            <div id="footer">
+                <div>
+                   
+                    <ul class="ul">
+                        <h3>Products Catogeries</h3>
+                        <li class="li-buttonF">Smartphone</li>
+                        <li class="li-buttonF">Laptop</li>
+                        <li class="li-buttonF">Watches</li>
+                        <li class="li-buttonF">Air conditinor</li>
+                        <li class="li-buttonF">Refrigarots</li>
+                        <li class="li-buttonF">Kitchen Appliences</li>
+                        <li class="li-buttonF">Presonal</li>
+                        <li class="li-buttonF">Healthcare</li>
+                        <li class="li-buttonF">Gaming</li>
+                    </ul>
+                </div>
+                <div>
+          
+                    <ul class="ul">
+                        <h3>Site Info</h3>
+                        <li class="li-buttonF">About Reliance Digital</li>
+                        <li class="li-buttonF">resQ Services</li>
+                        <li class="li-buttonF">Gift Cards</li>
+                        <li class="li-buttonF">Site Map</li>
+                        <li class="li-buttonF">Corporate Enquires</li>
+                        <li class="li-buttonF">Contact Us</li>
+                    </ul>
+                </div>
+                <div>       
+                    <ul class="ul">
+                        <h3>Resources Center</h3>
+                        <li class="li-buttonF">Product Reviews</li>
+                        <li class="li-buttonF">Buying Guides</li>
+                        <li class="li-buttonF">How Tos</li>
+                        <li class="li-buttonF">Featured Stories</li>
+                        <li class="li-buttonF">Event & Happenings</li>
+                    </ul>
+                </div>
+                <div>       
+                    <ul class="ul">
+                        <h3>Policies</h3>
+                        <li class="li-buttonF">Terms of use</li>
+                        <li class="li-buttonF">Cancellation and Retruns</li>
+                        <li class="li-buttonF">Privacy Policy</li>
+                        <li class="li-buttonF">E-waste Policy</li>
+                        <li class="li-buttonF">Pricing and Payments Policy</li>
+                        <li class="li-buttonF">Delivery & Shipping Policy</li>
+                        <li class="li-buttonF">Apna E-Store Maha Cashback T&C</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <h3 style="margin-left: 2rem; color: aliceblue;">FOLLOW US</h3>
+                <h3 style="margin-left: 14rem; color: aliceblue;">EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h3>  
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <a href="#"><img width="4%"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8IpEU3sOxQxNjMw3VAoSWsekRpvgOvjziQ&usqp=CAU"
+                        alt="" class="socialmedialogo"></a>
+                    <a href="#"><img width="6.5%"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQuQ1WZVJ3GUDCgjBkdoi29hZKhG2jqSJm2A&usqp=CAU"
+                        alt="" class="socialmedialogo"></a>
+                   <a href="#"><img width="8.5%"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49-2NdYCnhN07iUFqsG_ExFiP3QjH9s9naA&usqp=CAU"
+                        alt="" class="socialmedialogo"></a>
+                </div>
+    
+                <div>
+                    <img width="25%" src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt=""
+                        class="image-icon">
+                    <img width="25%" src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png" alt=""
+                        class="image-icon">
+                </div>
+            </div>
+            <div class="fotter-color-bott">
+                <h3 style="text-decoration: underline;">Disclaimer</h3>
+               <p style="font-size: smaller;">Product prices, offers and availability are subject to change from time to time. All prices are inclusive of taxes. Product colours & images are only for illustration and they may not exactly match with the actual product. Product specs are subject to change & may vary from actual product. While every care is taken to avoid inaccuracies in content, these are provided as is, without warranty of any kind.</p>
+               <hr>
+              <p style="font-size: smaller; padding-bottom: 1rem;"> © 2023 Reliance Digital. All Rights Reserved.</p>
+            </div>
+            
+        </footer>
+                   
+
+    </body>
+
+</html>
+<script>
+    let data = JSON.parse(localStorage.getItem("apan_e-store_cartproduct"));
+    let total = data.reduce(function (acc, ele) {
+        return acc + Number(ele.price);
+    }, 0);
+    document.querySelector("#rice").innerText = "₹" + total;
+    document.querySelector(".price").innerText = "₹" + total;
+    display(data);
+    function display(data) {
+        console.log(data);
+        for (let i = 0; i < data.length; i++) {
+            let d = document.createElement("div");
+            let d1 = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = data[i].avatar;
+
+            d1.append(img);
+            d1.style.hover
+            d1.addEventListener("click", function () {
+                localStorage.setItem("product_details", JSON.stringify(data[i]))
+                window.location.href = "product.html"
+            });
+            let d2 = document.createElement("div");
+            let h3 = document.createElement("h3");
+            h3.innerText = data[i].title;
+            let p1 = document.createElement("p");
+            let aa = Math.floor(Math.random() * 1234567) + 123456;
+            p1.innerText = "Product Id: " + aa;
+            p1.style.fontWeight = "bold";
+            p1.style.color = "grey";
+            let count = 1;
+            let b1 = document.createElement("button");
+            b1.innerText = "-";
+
+            let inp = document.createElement("input");
+            inp.style.textAlign = "center";
+            inp.value = count;
+            let b2 = document.createElement("button");
+            b2.innerText = "+";
+            let pri = data[i].price;
+            let h2 = document.createElement("h2");
+            h2.innerText = "₹" + pri;
+            let p2 = document.createElement("p");
+            p2.innerText = "MRP ₹" + (Number(data[i].price) + 100);
+            b1.addEventListener("click", function () {
+                if (count > 1) {
+                    count--;
+                    inp.value = count;
+                    pri = Number(data[i].price) * count;
+                    h2.innerText = "₹" + pri;
+                    p2.innerText = "MRP ₹" + (Number(data[i].price) + 100) * count;
+                    total = total - Number(data[i].price);
+                    document.querySelector("#rice").innerText = "₹" + total;
+                    document.querySelector(".price").innerText = "₹" + total;
+
+                }
+            })
+            b2.addEventListener("click", function () {
+                count++;
+                inp.value = count;
+
+                h2.innerText = "₹" + Number(data[i].price) * count;
+                p2.innerText = "MRP ₹" + (Number(data[i].price) + 100) * count;
+
+                total = total + Number(data[i].price);
+                console.log(total);
+                document.querySelector("#rice").innerText = "₹" + total;
+                document.querySelector(".price").innerText = "₹" + total;
+            })
+
+            d2.append(h3, p1, b1, inp, b2);
+            let d3 = document.createElement("div");
+
+            h2.style.color = "#003380";
+
+            p2.style.textDecoration = "line-through"
+            let p4 = document.createElement("p");
+            p4.innerText = "Free Shipping";
+            p4.style.color = "#008000";
+            p4.style.fontWeight = "bold";
+            let p5 = document.createElement("p");
+            p5.innerText = "*Delivery assurance is subject to our delivery locations staying open as per govt. regulations";
+            p5.style.fontSize = "small";
+            d3.append(h2, p2, p4, p5);
+            d.append(d1, d2, d3);
+            document.querySelector("#cl").append(d);
+            h3.addEventListener("click", function () {
+                localStorage.setItem("product_details", JSON.stringify(data[i]))
+                window.location.href = "product.html"
+            });
+        }
+    }
+    function coupon() {
+        let coupon_code = document.querySelector("#input").value;
+        console.log(coupon_code);
+        if(coupon_code==="Hariom"){
+            alert("50% COUPON ADD SUCCESSFULLY");
+            document.querySelector("#input").value = "";
+        }else{
+            alert("INVALID COUPON ");
+        }
+        
+    }
+    // document.querySelector("#line").innerText = "APNA E-STORE:      Home > Products > Cart";
+
+
+    function ch() {
+        let am = document.querySelector("#rice").innerText;
+        localStorage.setItem("amount", am);
+        window.location.href = "payment.html";
+    }
+
+
+  
+    let user_login = localStorage.getItem("user_login") || false;
+    if (user_login) {
+        let a = localStorage.getItem("fName")||localStorage.getItem("againName");
+        document.querySelector("#user_name").innerText = "Hi, " + a;
+document.getElementById("logout_btn").style.display="flex"
+    }
+
+    let user_logout = document.getElementById("logout_btn");
+    user_logout.addEventListener("click",()=>{
+        localStorage.removeItem("user_login");
+        localStorage.removeItem("fName");
+         document.querySelector("#user_name").innerText = localStorage.getItem("loginIcon");
+        document.getElementById("logout_btn").style.display="none"
+        document.querySelector("#user_name").innerHTML = `<img src="./image/account.png"}>Login`
+        window.location.href="index.html"
+    });
+
+</script>

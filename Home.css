@@ -21,6 +21,11 @@
     grid-template-columns: repeat(3,1fr);
 }
 
+.login-img{
+    width: 8%;
+    /* margin-top: 7px; */
+}
+
 .logo{
     /* border: 1px solid black; */
 }
@@ -28,6 +33,7 @@
 .searchBox{
     /* border: 1px solid blue; */
 }
+
 #search-box{
     border: none;
     height: 30px;
@@ -46,6 +52,16 @@
     border-radius: 0px 10px 10px 0px;
 }
 
+.login-img{
+    margin-left: 3rem;
+}
+
+#logout_btn{
+    border: none;
+    background-color: red;
+    /* margin-top: 0.5rem; */
+}
+
 .aboutNev1{
     /* border: 1xp solid red; */
     text-align: end;
@@ -54,10 +70,13 @@
     font-size: smaller;
 }
 .aboutNev2{
-    /* border: 1xp solid red; */
+    border: 1xp solid black;
     text-align: end;
+    align-items: flex-end;
     margin-top: 10px;
     margin-right: 0.9rem;
+    /* display: flex; */
+    flex-direction: row;
 }
 .aboutNev1>a{
     text-decoration: none;
